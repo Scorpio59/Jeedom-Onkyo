@@ -14,7 +14,7 @@ echo 10 > /tmp/onkyo_dep
 actual=`nodejs -v`;
 echo "Version actuelle : ${actual}"
 
-if [ $actual >= *"4."* ]
+if [[ $actual == *"8."* ]]
 then
   echo "Ok, version suffisante";
 else
